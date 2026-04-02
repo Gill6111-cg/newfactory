@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gill Agro Industries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+padding:15px 0;
+z-index:1000;
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
+}
+
+nav ul{
+list-style:none;
+display:flex;
+justify-content:center;
+}
+
+nav ul li{
+margin:0 25px;
+}
+
+nav ul li a{
+color:#fff;
+text-decoration:none;
+font-weight:600;
+letter-spacing:1px;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#4CAF50;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('factory.jpg') no-repeat center/cover;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#fff;
+padding:20px;
+}
+
+.hero h1{
+font-size:4rem;
+font-weight:700;
+margin-bottom:20px;
+text-shadow:0 0 15px rgba(0,0,0,0.8);
+animation:fadeUp 1.2s ease;
+}
+
+.hero p{
+font-size:1.4rem;
+max-width:700px;
+margin:auto;
+margin-bottom:40px;
+opacity:0.9;
+}
+
+/* BUTTONS */
+
+.hero-buttons a{
+display:inline-block;
+margin:10px;
+padding:16px 40px;
+border-radius:40px;
+font-size:1.1rem;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn-primary{
+background:linear-gradient(45deg,#4CAF50,#66bb6a);
+color:#fff;
+box-shadow:0 6px 20px rgba(0,0,0,0.4);
+}
+
+.btn-primary:hover{
+transform:translateY(-4px);
+}
+
+.btn-secondary{
+border:2px solid #fff;
+color:#fff;
+}
+
+.btn-secondary:hover{
+background:#fff;
+color:#000;
+}
+
+/* SECTIONS */
+
+section{
+padding:90px 20px;
+}
+
+.container{
+max-width:1150px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:50px;
+font-size:2.5rem;
+color:#fff;
+}
+
+/* PRODUCT GRID */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+/* PRODUCT CARD */
+
+.product{
+background:white;
+border-radius:18px;
+padding:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.product:hover{
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 15px 40px rgba(0,0,0,0.3);
+}
+
+.product img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+}
+
+.product h3{
+margin:18px 0 10px;
+}
+
+.order-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 25px;
+background:linear-gradient(45deg,#4CAF50,#66bb6a);
+color:#fff;
+border-radius:25px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.order-btn:hover{
+transform:scale(1.05);
+}
+
+/* ORDER FORM */
+
+.order-section{
+background:#f2f6f2;
+}
+
+form{
+max-width:650px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+form label{
+font-weight:600;
+}
+
+form input,
+form select,
+form textarea{
+width:100%;
+padding:12px;
+margin:10px 0 20px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+form button{
+width:100%;
+background:linear-gradient(45deg,#4CAF50,#66bb6a);
+color:white;
+padding:14px;
+border:none;
+border-radius:30px;
+font-size:1.1rem;
+cursor:pointer;
+transition:0.3s;
+}
+
+form button:hover{
+transform:scale(1.02);
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:#fff;
+text-align:center;
+padding:30px 15px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+0%{
+opacity:0;
+transform:translateY(40px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.8rem;
+}
+
+.hero p{
+font-size:1.1rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="factoryhome.html">Home</a></li>
+<li><a href="viewproduct.html">Products</a></li>
+<li><a href="order.html">Order</a></li>
+</ul>
+</nav>
+
+<!-- HOME -->
+<section class="hero" id="home">
+<div>
+<h1>Gill Agro Industries</h1>
+
+<p>
+Premium Manufacturer of Agricultural Sickles – Trusted by Farmers Across India
+</p>
+
+<div class="hero-buttons">
+<a href="viewproduct.html" class="btn-primary">View Products</a>
+<a href="order.html" class="btn-secondary">Place Order</a>
+</div>
+
+</div>
+</section>
+
+</body>
+</html>

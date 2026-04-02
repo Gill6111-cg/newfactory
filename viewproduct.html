@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Products | Gill Agro Industries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7f4;
+}
+
+/* Navbar */
+nav {
+    background: #111;
+    padding: 15px 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 25px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav ul li a:hover { color: #4CAF50; }
+
+/* Header */
+.header {
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                url('factory.jpg') no-repeat center/cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Products */
+section { padding: 80px 20px; }
+.container { max-width: 1150px; margin: auto; }
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+/* Product Card */
+.product {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    cursor: pointer;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* 🌟 GREEN LIGHTING ON MOUSE OVER */
+.product:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow:
+        0 0 0 3px #00ff66,
+        0 0 25px rgba(0, 255, 102, 0.85),
+        0 20px 45px rgba(0,0,0,0.25);
+}
+
+.product img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.product h3 {
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.product p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.order-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.order-btn:hover {
+    background: #3a9e42;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+    <li><a href="factoryhome.html">Home</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="order.html">Order</a></li>
+</ul>
+</nav>
+
+<header class="header">
+    <h1>Our Sickle Range</h1>
+    <p>Hover over a product to see details</p>
+</header>
+
+<section>
+<div class="container">
+<div class="products">
+
+    <div class="product">
+        <img src="wood.jpg">
+        <h3>Wood Handle Sickle</h3>
+        <p>Traditional wooden handle with sharp steel blade.</p>
+        <a href="order.html" class="order-btn">Order Now</a>
+    </div>
+
+    <div class="product">
+        <img src="plastic-sickle.jpg">
+        <h3>Plastic Handle Sickle</h3>
+        <p>Lightweight ergonomic plastic handle.</p>
+        <a href="order.html" class="order-btn">Order Now</a>
+    </div>
+
+    <div class="product">
+        <img src="heavy-sickle.jpg">
+        <h3>Heavy Duty Sickle</h3>
+        <p>Extra strong blade for tough agricultural work.</p>
+        <a href="order.html" class="order-btn">Order Now</a>
+    </div>
+
+</div>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2026 Gill Agro Industries</p>
+<p>Strong Tools • Strong Farmers</p>
+</footer>
+
+</body>
+</html>
